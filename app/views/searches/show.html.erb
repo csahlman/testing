@@ -1,0 +1,13 @@
+<%= form_for :search, url: searches_path do |f| %>
+  <%= f.label :search %>
+  <%= f.text_field :search %>
+  <%= f.submit "Search!" %>
+<% end %>
+
+<h1>Search Results</h1>
+
+<ul>
+<% @search_results.each do |result| %>
+  <li><%= result.text %></li>
+<% end %>
+</ul>

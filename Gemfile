@@ -2,10 +2,13 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
 
+gem 'json', '>= 1.7.7'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'high_voltage'
 gem 'twitter'
 
 # Gems used only for assets and not required
@@ -21,6 +24,16 @@ group :assets do
 end
 
 # gem 'dotenv-rails' LOADS UP .env file
+
+group :development, :test do 
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
+  gem 'capybara', '~> 2.1.0'
+  gem "capybara-webkit"
+  gem 'factory_girl_rails'
+  gem 'timecop'
+  gem 'annotate'
+end
 
 gem 'jquery-rails'
 

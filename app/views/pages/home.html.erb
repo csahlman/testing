@@ -1,0 +1,7 @@
+<h1>The amazing twitter searching thing</h1>
+
+<%= form_for :search, url: searches_path do |f| %>
+  <%= f.label :search %>
+  <%= f.text_field :search %>
+  <%= f.submit "Search!" %>
+<% end %>
