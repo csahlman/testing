@@ -8,6 +8,10 @@ gem 'json', '>= 1.7.7'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+
+group :production do 
+  gem 'pg'
+end
 gem 'high_voltage'
 gem 'twitter'
 
